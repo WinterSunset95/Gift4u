@@ -1,0 +1,139 @@
+@keyframes stemMain {
+	from {
+		top: 10rem;
+		scale: 0;
+	} to {
+		top: 1rem;
+		scale: 1;
+	}
+}
+
+.stem:nth-of-type(8), .stem-2:nth-of-type(8), .stem-3:nth-of-type(8) {
+	border-color: transparent darkgreen transparent transparent;
+	border-width: 1.5rem;
+	border-style: solid;
+	height: 50rem;
+	width: 10rem;
+	position: absolute;
+	border-radius: 50% 100%;
+	left: 10%;
+	transform: translateX(-50%) rotate(5deg);
+	z-index: 4;
+	top: 10rem;
+	scale: 0;
+}
+
+@keyframes leaf1 {
+	from {
+		top: 10.5rem;
+		transform: translateX(-50%) rotate(-25deg);
+	} to {
+		top: 10rem;
+		transform: translateX(-50%) rotate(-15deg);
+	}
+}
+
+@keyframes leaf1-intro {
+	from {
+		scale: 0;
+		left: 60%;
+		top: 50rem;
+		transform: translateX(-50%) rotate(-15deg);
+	} to {
+		scale: 1;
+		left: 20%;
+		top: 10rem;
+		transform: translateX(-50%) rotate(-15deg);
+	}
+}
+
+@keyframes leaf2 {
+	from {
+		top: 20.5rem;
+		transform: translateX(-50%) rotate(-25deg);
+	} to {
+		top: 20rem;
+		transform: translateX(-50%) rotate(-15deg);
+	}
+}
+
+@keyframes leaf2-intro {
+	from {
+		scale: 0;
+		left: 20%;
+		top: 50rem;
+		transform: translateX(-50%) rotate(-15deg);
+	} to {
+		scale: 1;
+		left: 20%;
+		top: 20rem;
+		transform: translateX(-50%) rotate(-15deg);
+	}
+}
+
+@keyframes leaf3 {
+	from {
+		top: 21.5rem;
+		transform: translateX(-50%) rotate(25deg) rotateY(180deg);
+	} to {
+		top: 21rem;
+		transform: translateX(-50%) rotate(15deg) rotateY(180deg);
+	}
+}
+
+@keyframes leaf3-intro {
+	from {
+		scale: 0;
+		left: 10%;
+		top: 50rem;
+		transform: translateX(-50%) rotate(15deg) rotateY(180deg);
+	} to {
+		scale: 1;
+		left: 110%;
+		top: 21rem;
+		transform: translateX(-50%) rotate(15deg) rotateY(180deg);
+	}
+}
+
+.leaf:nth-of-type(9), .leaf-2:nth-of-type(9), .leaf-3:nth-of-type(9) {
+	scale: 0;
+	left: 60%;
+	top: 50rem;
+	transform: translateX(-50%) rotate(-15deg);
+	width: 5rem;
+	height: 5rem;
+	position: absolute;
+	background: linear-gradient(to top, #0a4b0a, #1c7c1c, #2e8b57);
+	border-radius: 0% 50% 0 50%; /* Leaf shape */
+	left: 20%;
+	z-index: 3;
+	border: none;
+}
+
+.leaf:nth-of-type(10) {
+	scale: 0;
+	left: 20%;
+	top: 50rem;
+	transform: translateX(-50%) rotate(-15deg);
+	width: 7rem;
+	height: 5rem;
+	position: absolute;
+	background: linear-gradient(to top, #0a4b0a, #1c7c1c, #2e8b57);
+	border-radius: 0% 50% 0 50%; /* Leaf shape */
+	left: 20%;
+	z-index: 3;
+}
+
+.leaf:nth-of-type(11) {
+	scale: 0;
+	left: 10%;
+	top: 50rem;
+	transform: translateX(-50%) rotate(15deg) rotateY(180deg);
+	width: 7rem;
+	height: 5rem;
+	position: absolute;
+	background: linear-gradient(to top, #0a4b0a, #1c7c1c, #2e8b57);
+	border-radius: 0% 50% 0 50%; /* Leaf shape */
+	left: 110%;
+	z-index: 3;
+}

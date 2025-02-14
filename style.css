@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Great Vibes", "Montserrat", "Arial";
+}
+
+body {
+	background-color: black;
+	width: 100dvw;
+	height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.stars, .twinkle, .article, .loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.twinkle {
+	width: 1000px;
+}
+
+.article {
+	z-index: 10;
+}
+
+.article > p {
+	max-width: 30rem;
+	text-align: center;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding: 1rem;
+}
+
+.button {
+	position: absolute;
+	z-index: 20;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 1rem;
+}
+
+button {
+	font-size: 2rem;
+	text-align: center;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100rem;
+}
+
+@keyframes loading {
+	from {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(360deg);
+	}
+}
+
+.loader {
+	z-index: 30;
+	background-color: black;
+}
+
+.spinner {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100rem;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	animation: loading 2s linear infinite;
+}
+
+.stars {
+	background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+	z-index: 0;
+}
+
+@keyframes twinkle {
+	from {
+		transform: translate3d(-50%, 0, 0);
+	} to {
+		transform: translate3d(0%, 0, 0);
+	}
+}
+
+.twinkle {
+	background: transparent url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png) repeat;
+	z-index: 1;
+	animation: twinkle 10s alternate-reverse infinite;
+}
+
+.flower-container {
+	aspect-ratio: 1/2;
+	max-width: 100dvw;
+	max-height: 100dvh;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes petals-container-1 {
+	from {
+		top: 50rem;
+		left: 42%;
+		scale: 0.5;
+	} to {
+		top: 10rem;
+		left: 42%;
+		scale: 1.1;
+	}
+}
+
+.petals-container {
+	position: absolute;
+	top: 10rem;
+	left: 45%;
+	transform: translateX(-50%) rotate(0deg);
+	background-color: white;
+	width: 8rem;
+	scale: 1.1;
+}
+
+.petals-container-2 {
+	position: absolute;
+	top: 21rem;
+	left: 20%;
+	transform: translateX(-50%) rotate(-10deg);
+	background-color: white;
+	width: 8rem;
+	scale: 0.9;
+}
+
+.petals-container-3 {
+	position: absolute;
+	top: 30rem;
+	left: 70%;
+	transform: translateX(-50%) rotate(15deg) rotateY(180deg);
+	background-color: white;
+	width: 8rem;
+	scale: 0.9;
+}

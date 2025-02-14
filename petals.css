@@ -1,0 +1,272 @@
+@keyframes petal1 {
+	from {
+		scale: 0;
+		top: 35rem;
+		left: 70%;
+		transform: translateX(-50%) rotate(45deg);
+	}
+	to {
+		scale: 1;
+		top: 1rem;
+		left: 50%;
+		transform: translateX(-50%) rotate(45deg);
+	}
+	
+}
+
+@keyframes petal1-live {
+	from {
+		top: 1rem;
+		left: 45%;
+		transform: translateX(-50%) rotate(40deg);
+	} to {
+		top: 1rem;
+		left: 50%;
+		transform: translateX(-50%) rotate(45deg);
+	}
+}
+
+@keyframes petal2 {
+	from {
+		top: 35rem;
+		scale: 0.5;
+		left: 55%;
+		transform: translateX(-50%) rotate(30deg);
+	} to {
+		top: 1rem;
+		scale: 1;
+		left: 40%;
+		transform: translateX(-50%) rotate(5deg);
+	}
+}
+
+@keyframes petal2-live {
+	from {
+		left: 35%;
+		transform: translateX(-50%) rotate(0deg);
+	} to {
+		left: 40%;
+		transform: translateX(-50%) rotate(5deg);
+	}
+}
+
+@keyframes petal3 {
+	from {
+		top: 35rem;
+		scale: 0.5;
+		left: 65%;
+		transform: translateX(-50%) rotate(30deg);
+	} to {
+		top: 1rem;
+		scale: 1;
+		left: 60%;
+		transform: translateX(-50%) rotate(85deg);
+	}
+}
+
+@keyframes petal3-live {
+	from {
+		left: 55%;
+		transform: translateX(-50%) rotate(80deg);
+	} to {
+		left: 60%;
+		transform: translateX(-50%) rotate(85deg);
+	}
+}
+
+@keyframes petal4 {
+	from {
+		top: 35rem;
+		scale: 0.5;
+		left: 50%;
+		transform: translateX(-50%) rotate(30deg);
+	} to {
+		top: 1.5rem;
+		scale: 1;
+		left: 35%;
+		transform: translateX(-50%) rotate(-10deg);
+	}
+}
+
+@keyframes petal4-live {
+	from {
+		left: 30%;
+		transform: translateX(-50%) rotate(-15deg);
+	} to {
+		left: 35%;
+		transform: translateX(-50%) rotate(-10deg);
+	}
+}
+
+@keyframes petal5 {
+	from {
+		top: 35rem;
+		scale: 0.5;
+		left: 70%;
+		transform: translateX(-50%) rotate(30deg);
+	} to {
+		top: 1.5rem;
+		scale: 1;
+		left: 65%;
+		transform: translateX(-50%) rotate(100deg);
+	}
+}
+
+@keyframes petal5-live {
+	from {
+		left: 60%;
+		transform: translateX(-50%) rotate(95deg);
+	} to {
+		left: 65%;
+		transform: translateX(-50%) rotate(100deg);
+	}
+}
+
+@keyframes bud1 {
+	from {
+		left: 55%;
+		transform: translateX(-50%) rotate(90deg);
+		border-radius: 0 0 50% 100%;
+		width: 4rem;
+		height: 3rem;
+		top: 36rem;
+	} to {
+		left: 35%;
+		transform: translateX(-50%) rotate(10deg);
+		border-radius: 0 0 50% 100%;
+		width: 5rem;
+		height: 2.2rem;
+		top: 4rem;
+	}
+}
+
+@keyframes bud1-live {
+	from {
+		left: 30%;
+		transform: translateX(-50%) rotate(5deg);
+		border-radius: 0 0 50% 100%;
+		width: 5rem;
+		height: 2.2rem;
+		top: 4rem;
+	} to {
+		left: 35%;
+		transform: translateX(-50%) rotate(10deg);
+		border-radius: 0 0 50% 100%;
+		width: 5rem;
+		height: 2.2rem;
+		top: 4rem;
+	}
+}
+
+@keyframes bud2 {
+	from {
+		left: 85%;
+		transform: translateX(-50%) rotate(-90deg);
+		border-radius: 0 0 100% 50%;
+		width: 4rem;
+		height: 3rem;
+		top: 36rem;
+	} to {
+		left: 65%;
+		transform: translateX(-50%) rotate(-10deg);
+		border-radius: 0 0 100% 50%;
+		width: 5rem;
+		height: 2.2rem;
+		top: 4rem;
+	}
+}
+
+@keyframes bud2-live {
+	from {
+		left: 60%;
+		transform: translateX(-50%) rotate(-15deg);
+		border-radius: 0 0 100% 50%;
+		width: 5rem;
+		height: 2.2rem;
+		top: 4rem;
+	} to {
+		left: 65%;
+		transform: translateX(-50%) rotate(-10deg);
+		border-radius: 0 0 100% 50%;
+		width: 5rem;
+		height: 2.2rem;
+		top: 4rem;
+	}
+}
+
+.petal, .petal-2, .petal-3 {
+	border-radius: 0 3rem 0 3rem;
+	position: absolute;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+	z-index: 10;
+}
+
+.petal:nth-of-type(1), .petal-2:nth-of-type(1), .petal-3:nth-of-type(1) {
+	background-color: rgba(255, 0, 0, 1);
+	width: 4rem;
+	height: 4rem;
+	border-radius: 1rem;
+}
+
+.petal:nth-of-type(2), .petal:nth-of-type(3), .petal-2:nth-of-type(2), .petal-2:nth-of-type(3), .petal-3:nth-of-type(2), .petal-3:nth-of-type(3) {
+	top: 1rem;
+	width: 4.5rem;
+	height: 4.5rem;
+	background-color: rgba(220, 20, 60, 1);
+}
+
+.petal:nth-of-type(4), .petal:nth-of-type(5), .petal-2:nth-of-type(4), .petal-2:nth-of-type(5), .petal-3:nth-of-type(4), .petal-3:nth-of-type(5) {
+	top: 1.5rem;
+	width: 4.5rem;
+	height: 4.5rem;
+	background-color: rgba(178, 34, 34, 1);
+}
+
+.petal:nth-of-type(1), .petal-2:nth-of-type(1), .petal-3:nth-of-type(1) {
+	scale: 0;
+}
+
+.petal:nth-of-type(2), .petal-2:nth-of-type(2), .petal-3:nth-of-type(2) {
+	scale: 0;
+}
+
+.petal:nth-of-type(3), .petal-2:nth-of-type(3), .petal-3:nth-of-type(3) {
+	scale: 0;
+}
+
+.petal:nth-of-type(4), .petal-2:nth-of-type(4), .petal-3:nth-of-type(4) {
+	scale: 0;
+}
+
+.petal:nth-of-type(5), .petal-2:nth-of-type(5), .petal-3:nth-of-type(5) {
+	scale: 0;
+}
+
+.bud, .bud-2, .bud-3 {
+	position: absolute;
+	background-color: green;
+	--mask:
+		radial-gradient(4.46px at 50% 6.3px,#000 99%,#0000 101%) calc(50% - 6px) 0/12px 100%,
+		radial-gradient(4.46px at 50% -3.3px,#0000 99%,#000 101%) 50% 3px/12px 100% repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+	z-index: 10;
+}
+
+.bud:nth-of-type(6), .bud-2:nth-of-type(6), .bud-3:nth-of-type(6) {
+	left: 55%;
+	transform: translateX(-50%) rotate(90deg);
+	border-radius: 0 0 50% 100%;
+	width: 4rem;
+	height: 3rem;
+	top: 36rem;
+}
+
+.bud:nth-of-type(7), .bud-2:nth-of-type(7), .bud-3:nth-of-type(7) {
+	left: 85%;
+	transform: translateX(-50%) rotate(-90deg);
+	border-radius: 0 0 100% 50%;
+	width: 4rem;
+	height: 3rem;
+	top: 36rem;
+}
